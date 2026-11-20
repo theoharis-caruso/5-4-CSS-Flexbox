@@ -4,36 +4,82 @@
     <meta charset="utf-8" />
     <title>Unit 4 - Flexbox</title>
     <style>
+      .book-container {
+        background-color: rgb(118, 218, 94);
+        display: flex;
+      }
+      .book-item {
+        background-color: rgb(197, 86, 22);
+        justify-content: space-around;
+        align-items: center;
+      }
+      .CozyFantasy {
+         background-color: rgb(231, 173, 224);
+        display: flex;
+      }
+      .CozyF {
+         background-color: rgb(143, 209, 211);
+        justify-content: space-around;
+        align-items: flex-end;
+      }
+      .CozyMystery {
+         background-color: rgb(248, 1, 1);
+        display: flex;
+      }
+      .CozyM {
+        background-color: rgb(255, 230, 0);
+        justify-content: space-around;
+        align-items: center;
+      }
+      .parallax {
+
+  background-image: url("https://assets.penguinrandomhouse.com/wp-content/uploads/2025/07/31143115/PRH_1080x1080_Quiz-nocopy-nocopy.jpg");
+  min-height: 500px; 
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+body{
+  background-color: rgb(65, 199, 199);
+} 
     </style>
   </head>
-  <body>
+  
     <h1>Cozy Reads</h1>
+    <div class="parallax"></div>
+
+<div style="height:1000px;background-color:red;font-size:36px">
+    <div class="book-container">
 
       <img
         src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1654581271i/61242426.jpg"
-        width="200"
+        width="200" class="book-item"
       />
-      <p>
+      <p class="book-item">
         It’s not easy to build a coffee shop in a place that has never had
         coffee before. #CozyFantasy
       </p>
-
+    </div>
+<div class="CozyFantasy">
     <img
       src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1569514209i/45047384.jpg"
-      width="200"
+      width="200" class="CozyF"
     />
-    <p>
+    <p class="CozyF">
       The main character must oversee an inspection of a house for magical
       children. #CozyFantasy
     </p>
-
+</div>
+<div class="CozyMystery">
     <img
       src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1601307658i/53310061.jpg"
-      width="200"
+      width="200" class="CozyM"
     />
-    <p>
+    <p class="CozyM">
       Who better to help cover up an accidental murder than overly protective
       aunties. #CozyMystery
     </p>
+    </div>
+</div>
   </body>
 </html>
